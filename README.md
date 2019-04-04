@@ -1,7 +1,7 @@
 # Pattern Recognition: Find all unique segments made with 2d collinear points (python/pyspark)
 
 >Pattern recognition algorithm. Finds all the unique line segments formed with at leat k collinear present in a set of
->2D points expressed in cartessian coordinates. k must be greater or equal to 3
+>2D points expressed in cartesian coordinates. k must be greater or equal to 3
 
 Examples of the output:
 
@@ -11,7 +11,7 @@ Examples of the output:
 
 ## Getting Started
 
-The python code (fastSearchCollinearPoints.py) and pyspark (pysparkSearchCollinearPoints.py) code are independent from each 
+The python code (fastSearchCollinearPoints.py) and pyspark code (pysparkSearchCollinearPoints.py) are independent from each 
 other and each one represent an algorithm to solve this task.
 
 The complexity of the python version is ```O(nln(n))``` whereas the complexity of the pyspark version is ```O(n^2)``` 
@@ -27,9 +27,9 @@ To run the code you could provide a plain text file in the format
 45 89
 ```
 
-Where the first line tells how many point there are. In the data folder there are many test cases you can play around. 
+Where the first line indicates the number of points in the file. Inside the data folder there are many test cases to play around. 
 
-You can also use the random generator functions to generate the points at random. Search for the following snippets to
+You can also use random generator functions to generate the points at random. Search for the following snippets to
 use them
 
 [a snippet of the code inside fastSearchCollinearPoints.py]
@@ -52,14 +52,14 @@ use them
 ---
 ## Usage
 
-For the python code you
+For the python code you can use the followimg command
 
 ```python
 python fastSearchCollinearPoints.py k filename
 ```
 
-if you don't provide any arguments, the ones hardcoded will be used instead. You can use this option if you don't want  
-provide any argument. You can find where to do it in the line 100 which contains the following piece of code
+if you don't provide any arguments, the ones hardcoded inside the code will be used instead. You can use this option if you don't want  
+provide any argument. You can find where to select files manually in the line 100 which contains the following piece of code
 
 ```python
 except:
@@ -97,13 +97,14 @@ To run the pyspark code you must have intall properly spark and pyspark
 ## FAQ
 
 - I have troubles with pygame, Can I avoid used it?
-    - If you have troubles with pygame, you can rip off all the references to the file but you can still have the
-    access to the list of the collinear points. You can use this list to feed a plot in matplotlib. 
+    - If you have troubles with pygame, you can rip off all the references to the stddraw.py file. You still have
+    access to the list of the collinear points found annd you can use this data to feed annother plot library like matplotlib. 
 
 - Why do choose pygame instead of matplotlib?
-    - Because it was more easy to my and also think pygame can render thousand of points and lines without problems. 
+    - Because in my opinion pygame offers a cleaner canvas to present the results and it can render thousand of points 
+      and lines more efficiently than matplotlib 
 
-- Does matplotlib will supported in the future?
+- Does matplotlib will be supported in the future?
     - Maybe, if I have time, I certainly do it
     
 - will it be useful to look inside this code or it is of that kind of unreadable and ugly code?
