@@ -6,12 +6,12 @@ import numpy
 import stddraw
 
 #*****************************************************************************
-#  Execution:    python fastSearchCollinearPoints.py file_name
+#  Execution:    python fastSearchCollinearPoints.py k file_name
 #  Dependencies: pathlib, sys, numpy, pygame
 #
 #  Pattern recognition algorithm. Finds all the unique line segments build with
 #  at leat k collinear 2D points from an arbitrary array of points expressed in
-#  cartessian coordinates. k must be greater or equal to 3
+#  cartesian coordinates. k must be greater or equal to 3
 #
 #  Complexity: (n ln (n)) where n is the size of the array of points
 #
@@ -21,7 +21,7 @@ import stddraw
 class fastSearchCollinearPoints(object):
     """
     * This code search all the unique segments build with at least 4 collinear points 
-    * from an array of 2D points (expresses in cartessian coordinates), draw them and 
+    * from an array of 2D points (expresses in cartesian coordinates), draw them and 
     * print the start and end points of each segment.
     * 
     * If we have the collinear points  s -> p -> q -> r -> t -> u the printed segment 

@@ -12,7 +12,7 @@ import stddraw
 #
 #  Pattern recognition algorithm. Finds all the unique line segments build with
 #  at leat k collinear 2D points from an arbitrary array of points expressed in
-#  cartessian coordinates. k must be greater or equal to 3
+#  cartesian coordinates. k must be greater or equal to 3
 #
 #  Complexity: (n^2) where n is the size of the array of points
 #
