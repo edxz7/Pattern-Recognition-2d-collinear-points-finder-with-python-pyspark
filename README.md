@@ -113,11 +113,11 @@ To run the pyspark code you must have intall properly spark and pyspark
       course this python version don't will be graded by the autograder)
 ---
 
-## Acknowledgments
+## Acknowledgments and Credits
 
 * The test data was taken from the assignment 3 for the Coursera course [Algorithms I](https://www.coursera.org/learn/algorithms-part1)
   offered by the Princeton University
-  
+* The stddraw.py file was taken from the texbooksite [Programming in python an interdiciplinary approach](https://introcs.cs.princeton.edu/python/code/) 
   
 ---
 
