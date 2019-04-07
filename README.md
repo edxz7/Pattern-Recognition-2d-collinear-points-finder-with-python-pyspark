@@ -9,6 +9,8 @@ Examples of the output:
 
 <img src = "images/fig2.png" width="500">
 
+If you found helpful this code, give me a star they are free!, in that way I know if this code was useful for someone
+
 ## Getting Started
 
 The python code (fastSearchCollinearPoints.py) and pyspark code (pysparkSearchCollinearPoints.py) are independent from each 
@@ -58,8 +60,7 @@ For the python code you can use the followimg command
 python fastSearchCollinearPoints.py k filename
 ```
 
-if you don't provide any arguments, the ones hardcoded inside the code will be used instead. You can use this option if you don't want  
-provide any argument. You can find where to select files manually in the line 100 which contains the following piece of code
+if you don't provide any arguments, the ones hardcoded inside the code will be used instead. You can use this option if you don't want to provide any argument. You can find where to select files manually in the line 100 which contains the following piece of code
 
 ```python
 except:
