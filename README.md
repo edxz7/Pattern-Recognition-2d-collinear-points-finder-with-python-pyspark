@@ -1,7 +1,7 @@
 # Pattern Recognition: Find all unique segments made with 2d collinear points (python/pyspark)
 
->Pattern recognition algorithm. Finds all the unique line segments formed with at leat k collinear points present in a set of
->2D points expressed in cartesian coordinates. k must be greater or equal to 3 (why?, any pair of points defines a line)
+Pattern recognition algorithm. Finds all the unique line segments formed with at leat k collinear points present in a set of
+2D points expressed in cartesian coordinates. k must be greater or equal to 3 (why?, any pair of points defines a line, so ...)
 
 Examples of the output:
 
