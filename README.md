@@ -9,7 +9,6 @@ Examples of the output:
 
 <img src = "images/fig2.png" width="500">
 
-If you found helpful this code, give me a star they are free!, in that way I know if this code was useful for someone
 
 ## Getting Started
 
@@ -117,7 +116,6 @@ To run the pyspark code you must have intall properly spark and pyspark
 
 ## Acknowledgments and Credits
 
-* If you found helpful this content, give me a star they are free!, in that way I know if this code was useful for someone
 * The test data was taken from the assignment 3 of the Coursera course [Algorithms I](https://www.coursera.org/learn/algorithms-part1)
   offered by the Princeton University
 * The stddraw.py file was taken from the texbooksite [Programming in python an interdiciplinary approach](https://introcs.cs.princeton.edu/python/code/) 
