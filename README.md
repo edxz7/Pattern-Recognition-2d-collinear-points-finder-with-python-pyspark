@@ -13,13 +13,13 @@ Examples of the output:
 ## Getting Started
 
 The python code (fastSearchCollinearPoints.py) and pyspark code (pysparkSearchCollinearPoints.py) are independent from each 
-other and each one represent an algorithm to solve this task.
+other and each one represent an algorithm that solves this task.
 
 The complexity of the python version is ```O(nln(n))``` whereas the complexity of the pyspark version is ```O(n^2)``` 
 where n is the size of the input
 
 
-To run the code you could provide a plain text file in the format
+To run the code using your own data you must provide a plain text file in the following format
 
 ```
 3
@@ -30,7 +30,7 @@ To run the code you could provide a plain text file in the format
 
 Where the first line indicates the number of points in the file. Inside the data folder there are many test cases to play around. 
 
-You can also use random generator functions to generate the points at random. Search for the following snippets to
+You can also use random generator functions to generate the points at random. Search for the following snippets of code to
 use them
 
 [a snippet of the code inside fastSearchCollinearPoints.py]
@@ -59,7 +59,9 @@ For the python code you can use the followimg command
 python fastSearchCollinearPoints.py k filename
 ```
 
-if you don't provide any arguments, the ones hardcoded inside the code will be used instead. You can use this option if you don't want to provide any argument. You can find where to select files manually in the line 100 which contains the following piece of code
+Whete k is the number of collinear point you want to detect anf ```filename``` is the name oof the file you want to inspect (this file must be inside the data direcctory). 
+
+If you don't provide any arguments, the ones hardcoded inside the code will be used instead. You can use this option if you don't want to provide any argument. You can find where to select files manually in the line 100 which contains the following piece of code
 
 ```python
 except:
@@ -89,7 +91,7 @@ If you have installed anaconda, you can get pygame running the following code
 pip install pygame 
 ```
 
-To run the pyspark code you must have intall properly spark and pyspark
+To run the pyspark code you must have intalled properly spark and pyspark
 
 
 ---
@@ -98,9 +100,9 @@ To run the pyspark code you must have intall properly spark and pyspark
 
 - I have troubles with pygame, Can I avoid used it?
     - If you have troubles with pygame, you can rip off all the references to the stddraw.py file. You still have
-    access to the list of the collinear points found annd you can use this data to feed annother plot library like matplotlib. 
+    access to the list of the collinear points found and you can use this data to feed another plot library like matplotlib. 
 
-- Why do choose pygame instead of matplotlib?
+- Why do you choose pygame instead of matplotlib?
     - Because in my opinion pygame offers a cleaner canvas to present the results and it can render thousand of points 
       and lines more efficiently than matplotlib 
 
