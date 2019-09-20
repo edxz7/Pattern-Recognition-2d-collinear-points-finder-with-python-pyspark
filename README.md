@@ -1,7 +1,7 @@
 # Pattern Recognition: Find all unique segments made with 2d collinear points (python/pyspark)
 
-Pattern recognition algorithm. Finds all the unique line segments formed with at leat k collinear points present in a set of
-2D points expressed in cartesian coordinates. k must be greater or equal to 3 (why?, any pair of points defines a line, so ...)
+Pattern recognition algorithm. Finds all unique line segments made with at least k collinear points found in a set of
+2D points expressed in cartesian coordinates. k must be greater than or equal to 3 (why?, becuase any pair of points defines a line, so the concept of collinearity is not well define for two points)
 
 Examples of the output:
 
@@ -13,7 +13,7 @@ Examples of the output:
 ## Getting Started
 
 The python code (fastSearchCollinearPoints.py) and pyspark code (pysparkSearchCollinearPoints.py) are independent from each 
-other and each one represent an algorithm that solves this task.
+other and each one represents an algorithm that solves this task.
 
 The complexity of the python version is ```O(nln(n))``` whereas the complexity of the pyspark version is ```O(n^2)``` 
 where n is the size of the input
@@ -28,9 +28,9 @@ To run the code using your own data you must provide a plain text file in the fo
 45 89
 ```
 
-Where the first line indicates the number of points in the file. Inside the data folder there are many test cases to play around. 
+the first line indicates the number of points in the file. Inside the data folder there are many test cases to play around. 
 
-You can also use random generator functions to generate the points at random. Search for the following snippets of code to
+You can also use a random generator functions to generate the points at random. Search for the following snippets of code to
 use them
 
 [a snippet of the code inside fastSearchCollinearPoints.py]
@@ -59,7 +59,7 @@ For the python code you can use the followimg command
 python fastSearchCollinearPoints.py k filename
 ```
 
-Whete k is the number of collinear point you want to detect anf ```filename``` is the name oof the file you want to inspect (this file must be inside the data direcctory). 
+Whete k is the number of collinear point you want to detect and ```filename``` is the name of the file you want to inspect (this file must be inside the data direcctory). 
 
 If you don't provide any arguments, the ones hardcoded inside the code will be used instead. You can use this option if you don't want to provide any argument. You can find where to select files manually in the line 100 which contains the following piece of code
 
@@ -100,10 +100,10 @@ To run the pyspark code you must have intalled properly spark and pyspark
 
 - I have troubles with pygame, Can I avoid used it?
     - If you have troubles with pygame, you can rip off all the references to the stddraw.py file. You still have
-    access to the list of the collinear points found and you can use this data to feed another plot library like matplotlib. 
+    access to the list of the collinear points found and you can use this data to feed another plotting library like matplotlib. 
 
 - Why do you choose pygame instead of matplotlib?
-    - Because in my opinion pygame offers a cleaner canvas to present the results and it can render thousand of points 
+    - Because in my opinion pygame offers a cleaner canvas to represent the results and it can render thousand of points 
       and lines more efficiently than matplotlib 
 
 - Does matplotlib will be supported in the future?
